@@ -1,0 +1,225 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef2f7;
+    color: #263238;
+}
+
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+header {
+    background: linear-gradient(135deg, #0f172a, #172554, #312e81);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.25);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #67e8f9;
+}
+
+
+/* ================================
+   CONTENEDOR PRINCIPAL
+================================ */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* ================================
+   SECCIONES
+================================ */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+
+    border-left: 5px solid #06b6d4;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #172554;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+
+/* ================================
+   BOTONES
+================================ */
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #0891b2, #2563eb);
+
+    color: white;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(135deg, #06b6d4, #4f46e5);
+
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.35);
+}
+
+
+/* ================================
+   FORMULARIOS
+================================ */
+
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+    color: #334155;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 10px 12px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    background-color: #f8fafc;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+/* Cuando hacemos clic en un campo */
+
+input:focus,
+select:focus {
+    outline: none;
+
+    border-color: #06b6d4;
+
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+
+    background-color: white;
+}
+
+
+/* ================================
+   LISTAS
+================================ */
+
+#listaLibros,
+#listaAlumnos,
+#listaPrestamos {
+    margin-top: 20px;
+}
+
+
+/* Cada elemento que agregamos dinámicamente */
+
+#listaLibros div,
+#listaAlumnos div,
+#listaPrestamos div {
+    background-color: #f8fafc;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #06b6d4;
+
+    transition: 0.2s;
+}
+
+#listaLibros div:hover,
+#listaAlumnos div:hover,
+#listaPrestamos div:hover {
+    transform: translateX(4px);
+
+    background-color: #f0f9ff;
+}
+
+
+/* ================================
+   MENSAJES
+================================ */
+
+#mensajeAlumno,
+#mensajePrestamo {
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
