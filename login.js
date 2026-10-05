@@ -1,7 +1,4 @@
 
-// ==========================================
-// LOGIN
-// ==========================================
 
 const formulario = document.getElementById("formLogin");
 const mensaje = document.getElementById("mensaje");
@@ -13,9 +10,6 @@ formulario.addEventListener("submit", async (evento) => {
     evento.preventDefault();
 
 
-    // ==========================================
-    // OBTENER DATOS DEL FORMULARIO
-    // ==========================================
 
     const email =
         document.getElementById("email").value;
@@ -26,9 +20,7 @@ formulario.addEventListener("submit", async (evento) => {
 
     try {
 
-        // ==========================================
-        // ENVIAR DATOS AL BACKEND
-        // ==========================================
+
 
         const respuesta = await fetch(
             "http://localhost:3000/usuarios/login",
@@ -51,10 +43,7 @@ formulario.addEventListener("submit", async (evento) => {
         const datos = await respuesta.json();
 
 
-        // ==========================================
-        // LOGIN INCORRECTO
-        // ==========================================
-
+    
         if (!respuesta.ok) {
 
             mensaje.textContent =
@@ -65,10 +54,7 @@ formulario.addEventListener("submit", async (evento) => {
         }
 
 
-        // ==========================================
-        // LOGIN CORRECTO
-        // ==========================================
-
+    
         // Guardamos el token
         localStorage.setItem(
             "token",
@@ -94,9 +80,9 @@ formulario.addEventListener("submit", async (evento) => {
         console.log("Usuario:", datos.usuario);
 
 
-        // ==========================================
+       
         // IR AL SISTEMA
-        // ==========================================
+        
 
         setTimeout(() => {
 
@@ -107,9 +93,9 @@ formulario.addEventListener("submit", async (evento) => {
 
     } catch (error) {
 
-        // ==========================================
+        
         // ERROR DE CONEXIÓN
-        // ==========================================
+    
 
         console.error(
             "Error en el login:",

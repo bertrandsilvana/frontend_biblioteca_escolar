@@ -2,9 +2,8 @@
 const API = "http://localhost:3000";
 
 
-// ==========================================
+
 // OBTENER TOKEN
-// ==========================================
 
 function obtenerToken() {
 
@@ -13,9 +12,9 @@ function obtenerToken() {
 }
 
 
-// ==========================================
+
 // AGREGAR ALUMNO
-// ==========================================
+
 
 const formAlumno = document.getElementById("formAlumno");
 
@@ -109,10 +108,6 @@ formAlumno.addEventListener("submit", async (event) => {
 
 
 
-// ==========================================
-// CARGAR ALUMNOS
-// ==========================================
-
 async function cargarAlumnos() {
 
     const token = obtenerToken();
@@ -205,11 +200,7 @@ async function cargarAlumnos() {
 
 }
 
-
-
-// ==========================================
 // AGREGAR LIBRO
-// ==========================================
 
 const formLibro = document.getElementById("formLibro");
 
@@ -310,10 +301,7 @@ formLibro.addEventListener("submit", async (event) => {
 });
 
 
-
-// ==========================================
 // CARGAR LIBROS
-// ==========================================
 
 async function cargarLibros() {
 
@@ -409,10 +397,7 @@ async function cargarLibros() {
 }
 
 
-
-// ==========================================
 // REGISTRAR PRÉSTAMO
-// ==========================================
 
 const formPrestamo =
     document.getElementById("formPrestamo");
