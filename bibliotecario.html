@@ -1,148 +1,257 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Panel del Bibliotecario</title>
 
     <link rel="stylesheet" href="css/estilos.css">
+
 </head>
+
 
 <body>
 
+    <!-- ==========================================
+         ENCABEZADO
+    =========================================== -->
+
     <header>
-       <h1>
-    <h1>
-    <img 
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSegLD51tXxJO9KrpV6R1yguqZPp7y3EggqEvN7Rbc9Hw&s=10" 
-        alt="Biblioteca"
-        width="60"
-    >
-    Biblioteca Escolar
-</h1>
+
+        <h1>
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSegLD51tXxJO9KrpV6R1yguqZPp7y3EggqEvN7Rbc9Hw&s=10"
+                alt="Biblioteca"
+                width="60"
+            >
+
+            Biblioteca Escolar
+
+        </h1>
+
         <p>Panel del bibliotecario</p>
+
     </header>
+
 
     <main>
 
-        <!-- AGREGAR ALUMNO -->
 
-    <section>
+        <!-- ==========================================
+             AGREGAR ALUMNO
+        =========================================== -->
 
-        <h2>
-            <img 
-                src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvEGzjAGHbWnlQYbp_IqE0xsU91GCL6oWcUnoXuoAWw&s=10
-                alt="Alumno"
-                width="60"
-            >
-            Agregar alumno
-        </h2>
-
-        <form id="formAlumno">
-
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
-
-            <br><br>
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" required>
-
-            <br><br>
-
-            <label for="dni">DNI:</label>
-            <input type="number" id="dni" required>
-
-            <br><br>
-
-            <button type="submit">
-                Agregar alumno
-            </button>
-
-        </form>
-
-        <p id="mensajeAlumno"></p>
-
-    </section>
-
-            
-        <!-- AGREGAR LIBRO -->
-
-
-<section>
-
-    <h2>📖 Agregar libro</h2>
-
-    <form id="formLibro">
-
-        <label for="titulo">Título:</label>
-        <input type="text" id="titulo" required>
-
-        <br><br>
-
-        <label for="autor">Autor:</label>
-        <input type="text" id="autor" required>
-
-        <br><br>
-
-        <label for="anio_publicacion">Año de publicación:</label>
-        <input type="number" id="anio_publicacion" required>
-
-        <br><br>
-
-        <button type="submit">
-            Agregar libro
-        </button>
-
-    </form>
-
-    <p id="mensajelibro"></p>
-
-</section>
-
-        <!-- REGISTRAR PRÉSTAMO -->
         <section>
 
-            <h2>📋 Registrar préstamo</h2>
+            <h2>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvEGzjAGHbWnlQYbp_IqE0xsU91GCL6oWcUnoXuoAWw&s=10"
+                    alt="Alumno"
+                    width="60"
+                >
+
+                Agregar alumno
+
+            </h2>
+
+
+            <form id="formAlumno">
+
+                <label for="nombre">
+                    Nombre:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="apellido">
+                    Apellido:
+                </label>
+
+                <input
+                    type="text"
+                    id="apellido"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="dni">
+                    DNI:
+                </label>
+
+                <input
+                    type="number"
+                    id="dni"
+                    required
+                >
+
+                <br><br>
+
+
+                <button type="submit">
+                    Agregar alumno
+                </button>
+
+            </form>
+
+
+            <p id="mensajeAlumno"></p>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             AGREGAR LIBRO
+        =========================================== -->
+
+        <section>
+
+            <h2>
+                📖 Agregar libro
+            </h2>
+
+
+            <form id="formLibro">
+
+                <label for="titulo">
+                    Título:
+                </label>
+
+                <input
+                    type="text"
+                    id="titulo"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="autor">
+                    Autor:
+                </label>
+
+                <input
+                    type="text"
+                    id="autor"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="anio_publicacion">
+                    Año de publicación:
+                </label>
+
+                <input
+                    type="number"
+                    id="anio_publicacion"
+                    required
+                >
+
+                <br><br>
+
+
+                <button type="submit">
+                    Agregar libro
+                </button>
+
+            </form>
+
+
+            <p id="mensajelibro"></p>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             REGISTRAR PRÉSTAMO
+        =========================================== -->
+
+        <section>
+
+            <h2>
+                📋 Registrar préstamo
+            </h2>
+
 
             <form id="formPrestamo">
 
-                <label for="alumno">Alumno:</label>
+
+                <label for="alumno">
+                    Alumno:
+                </label>
 
                 <select id="alumno" required>
-                    <option value="">Seleccionar alumno</option>
+
+                    <option value="">
+                        Seleccionar alumno
+                    </option>
+
                 </select>
 
                 <br><br>
 
 
-                <label for="libro">Libro:</label>
+
+                <label for="libro">
+                    Libro:
+                </label>
 
                 <select id="libro" required>
-                    <option value="">Seleccionar libro</option>
+
+                    <option value="">
+                        Seleccionar libro
+                    </option>
+
                 </select>
 
                 <br><br>
+
 
 
                 <label for="fechaPrestamo">
                     Fecha de préstamo:
                 </label>
 
-                <input type="date" id="fechaPrestamo" required>
+                <input
+                    type="date"
+                    id="fechaPrestamo"
+                    required
+                >
 
                 <br><br>
+
 
 
                 <label for="fechaDevolucion">
                     Fecha de devolución:
                 </label>
 
-                <input type="date" id="fechaDevolucion">
+                <input
+                    type="date"
+                    id="fechaDevolucion"
+                >
 
                 <br><br>
+
 
 
                 <button type="submit">
@@ -151,15 +260,22 @@
 
             </form>
 
+
             <p id="mensajePrestamo"></p>
 
         </section>
 
+
     </main>
 
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
 
     <script src="js/bibliotecario.js"></script>
 
 </body>
 
 </html>
+```
