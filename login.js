@@ -77,8 +77,8 @@ formulario.addEventListener("submit", async (evento) => {
 
         // Mostramos información en la consola
         console.log("Token:", datos.token);
-        console.log("Usuario:", datos.usuario);
 
+        console.log("Usuario:", datos.usuario);
 
        
         // IR AL SISTEMA
@@ -88,7 +88,7 @@ formulario.addEventListener("submit", async (evento) => {
 
             window.location.href = "index.html";
 
-        }, 1000);
+        }, 5000);
 
 
     } catch (error) {
