@@ -510,9 +510,9 @@ formPrestamo.addEventListener("submit", async (event) => {
 
 
 
-// ==========================================
+
 // AL CARGAR LA PÁGINA
-// ==========================================
+
 
 cargarAlumnos();
 cargarLibros();

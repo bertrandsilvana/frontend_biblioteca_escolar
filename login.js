@@ -1,7 +1,21 @@
 
-
 const formulario = document.getElementById("formLogin");
 const mensaje = document.getElementById("mensaje");
+
+// Limpiar los campos al cargar la página
+formulario.reset();
+
+const campoEmail = document.getElementById("email");
+const campoPassword = document.getElementById("password");
+
+campoEmail.value = "";
+campoPassword.value = "";
+
+console.log("Login cargado");
+console.log("Email después de limpiar:", campoEmail.value);
+console.log("Contraseña vacía:", campoPassword.value === "");
+
+
 
 
 formulario.addEventListener("submit", async (evento) => {
@@ -11,13 +25,10 @@ formulario.addEventListener("submit", async (evento) => {
 
 
 
-    const email =
-        document.getElementById("email").value;
+    const email =  document.getElementById("email").value;
 
-    const password =
-        document.getElementById("password").value;
-
-
+    const password = document.getElementById("password").value;
+                        
     try {
 
 
@@ -86,7 +97,7 @@ formulario.addEventListener("submit", async (evento) => {
 
         setTimeout(() => {
 
-            window.location.href = "index.html";
+            window.location.href = "bibliotecario.html";
 
         }, 5000);
 

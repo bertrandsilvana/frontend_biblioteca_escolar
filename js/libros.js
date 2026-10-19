@@ -1,10 +1,7 @@
 
 const API = "http://localhost:3000";
 
-
-// ==========================================
 // MOSTRAR LIBROS
-// ==========================================
 
 const botonLibros = document.getElementById("btnLibros");
 const listaLibros = document.getElementById("listaLibros");
@@ -12,11 +9,11 @@ const listaLibros = document.getElementById("listaLibros");
 
 botonLibros.addEventListener("click", async () => {
 
-    // Obtenemos el token guardado al iniciar sesión
+// Obtenemos el token guardado al iniciar sesión
     const token = localStorage.getItem("token");
 
 
-    // Verificamos que exista el token
+ // Verificamos que exista el token
     if (!token) {
 
         listaLibros.innerHTML =
@@ -40,10 +37,9 @@ botonLibros.addEventListener("click", async () => {
         const datos = await respuesta.json();
 
 
-        // ==========================================
-        // MANEJO DE ERRORES
-        // ==========================================
-
+        
+// MANEJO DE ERRORES
+        
         if (!respuesta.ok) {
 
             if (respuesta.status === 401) {
@@ -71,9 +67,8 @@ botonLibros.addEventListener("click", async () => {
         }
 
 
-        // ==========================================
-        // MOSTRAR LIBROS
-        // ==========================================
+ // MOSTRAR LIBROS
+
 
         const libros = datos;
 
@@ -113,4 +108,4 @@ botonLibros.addEventListener("click", async () => {
     }
 
 });
-``
+
